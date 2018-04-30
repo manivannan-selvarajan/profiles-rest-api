@@ -64,7 +64,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
         """ Django uses this when it needs to convert the object to a string"""
         return self.email
 # Create your models here.
-class profileFeedItem(models.Model):
+class ProfileFeedItem(models.Model):
     """Profile status update."""
 
     user_profile = models.ForeignKey("UserProfile", on_delete=models.CASCADE)
